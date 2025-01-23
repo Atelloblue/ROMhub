@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download RetroArch - ROMhub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: #fff;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #292940;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Main Section Styles */
+        .main-content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .main-content h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        .downloads {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .download-item {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            background-color: #292940;
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .download-item:hover {
+            transform: scale(1.1);
+            background-color: #3b3b59;
+        }
+
+        .download-item a {
+            text-decoration: none;
+            color: #00bcd4;
+            font-size: 1.2rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background-color: #292940;
+            color: #ccc;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ROMhub</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Download RetroArch</h1>
+        <p>RetroArch is a powerful frontend for emulators, game engines, and media players. Choose your platform below to get started.</p>
+        <div class="downloads">
+            <div class="download-item">
+                <a href="https://buildbot.libretro.com/stable/1.20.0/windows/x86_64/RetroArch-Win64-setup.exe" target="_blank">Download for Windows</a>
+            </div>
+            <div class="download-item">
+                <a href="https://buildbot.libretro.com/stable/1.20.0/apple/osx/universal/RetroArch_Metal.dmg" target="_blank">Download for macOS</a>
+            </div>
+            <div class="download-item">
+                <a href="https://buildbot.libretro.com/nightly/linux/x86_64/RetroArch.7z" target="_blank">Download for Linux</a>
+            </div>
+            <div class="download-item">
+                <a href="https://play.google.com/store/apps/details?id=com.retroarch" target="_blank">Download for Android</a>
+            </div>
+            <div class="download-item">
+                <a href="https://apps.apple.com/us/app/retroarch/id6499539433" target="_blank">Download for iOS</a>
+            </div>
+        </div>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>        
+        <p>&copy; 2025 ROMhub. <a href="#terms">Terms</a> | <a href="privacy.html">Privacy</a> | <a href="#contact">Contact</a></p>
+    </footer>
+</body>
+</html>
